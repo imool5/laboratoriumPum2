@@ -18,7 +18,8 @@ android:textSize="20dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Zabrze"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/colorWhite"
+        android:id="@+id/TextView"/>
 
     <ImageView
        android:layout_marginTop="1dp"
@@ -50,10 +51,12 @@ android:textSize="20dp"
         android:text="Podaj miejsce:" />
 
     <EditText
+        android:id="@+id/EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"/>
 <Button
+    android:id="@+id/Button1"
     android:background="@android:color/white"
     android:textColor="@color/colorButton"
     android:layout_margin="5dp"
@@ -62,6 +65,7 @@ android:textSize="20dp"
     android:layout_gravity="center"
     android:text="Zmień miejsce"/>/>
     <Button
+        android:id="@+id/Button2"
         android:background="@android:color/white"
         android:textColor="@color/colorButton"
         android:layout_margin="5dp"
