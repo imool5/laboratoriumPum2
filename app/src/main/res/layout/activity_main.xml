@@ -63,7 +63,8 @@ android:textSize="20dp"
     android:layout_width="260dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:text="Zmień miejsce"/>/>
+    android:text="Zmień miejsce"
+    android:onClick="b1click"/>/>
     <Button
         android:id="@+id/Button2"
         android:background="@android:color/white"
@@ -72,5 +73,6 @@ android:textSize="20dp"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Pokaż listę dostępnych miejsc"/>
+        android:text="Pokaż listę dostępnych miejsc"
+        android:onClick="b2click"/>
 </LinearLayout>
