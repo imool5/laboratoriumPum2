@@ -16,36 +16,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button Button_Miejsce = findViewById(R.id.Button1);
-        Button Button_Lista = findViewById(R.id.Button2);
+        Button Zmiana_miejsca = findViewById(R.id.Button1);
+        Button Lista_miejsc = findViewById(R.id.Button2);
         final EditText EditText = findViewById((R.id.EditText));
         final TextView TextView = findViewById((R.id.TextView));
 
 
-
-
-        Button_Lista.setOnClickListener(new View.OnClickListener() {
+        Lista_miejsc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(intent);
             }
         });
 
-        Button_Miejsce.setOnClickListener(new View.OnClickListener() {
+        Zmiana_miejsca.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-
-                String zmienna = EditText.getText().toString();
-                TextView.setText(zmienna);
-                Bundle bundle = new Bundle();
-                bundle.putString("item",zmienna);
-                intent.putExtras(bundle);
+                MBundle(EditText, TextView);
             }
 
 
         });
 
 
+    }
+
+    private void MBundle(EditText editText, TextView textView) {
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        String zmienna = editText.getText().toString();
+        textView.setText(zmienna);
+        Bundle bundle = new Bundle();
+        bundle.putString("item", zmienna);
+        intent.putExtras(bundle);
     }
 
 
