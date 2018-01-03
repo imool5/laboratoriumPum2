@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.TextView)
     TextView TextView;
 
-    @OnClick(R.id.Button1)
-    void OnClick(View View) {
-        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+   // @OnClick(R.id.Button1)
+   // void OnClick(View View) {
+    //    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+//
+ //       startActivity(intent);
+  //  }
 
-        startActivity(intent);
-    }
 
-   
 
-}
+//}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

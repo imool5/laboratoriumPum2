@@ -1,23 +1,24 @@
 package imiolekdaniel.pumlab2;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.view.ViewGroup;
 
 /**
  * Created by Daniel on 20.12.2017.
  */
 
-public class PlaceAdapter {
 
-    public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder>{
+
+    public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
 
         @Override
-        public AnimalAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public PlaceAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             return null;
         }
 
         @Override
-        public void onBindViewHolder(AnimalAdapter.ViewHolder holder, int position) {
+        public void onBindViewHolder(PlaceAdapter.ViewHolder holder, int position) {
 
         }
 
@@ -27,6 +28,9 @@ public class PlaceAdapter {
         }
 
        public class ViewHolder extends RecyclerView.ViewHolder {
-        }
+           public ViewHolder(View itemView) {
+               super(itemView);
+           }
+       }
     }
-}
+
