@@ -1,3 +1,5 @@
+package imiolekdaniel.pumlab2;
+
 /**
  * Created by Daniel on 03.01.2018.
  */
@@ -9,11 +11,14 @@ public class Place {
     private String information;
 
 
-    public Place(String placeName, int temperature, String information) {
-        this.placeName = placeName;
-        this.temperature = temperature;
-        this.information = information;
+    public String getPlaceName() {
+        return placeName;
     }
+
+    public void setPlaceName(String placeName) {
+        this.placeName = placeName;
+    }
+
     public int getTemperature() {
         return temperature;
     }
@@ -30,11 +35,10 @@ public class Place {
         this.information = information;
     }
 
-    public String getPlaceName() {
-        return placeName;
-    }
-
-    public void setPlaceName(String placeName) {
+    public Place(String placeName, int temperature, String information) {
         this.placeName = placeName;
+        this.temperature = temperature;
+        this.information = information;
+
     }
 }
