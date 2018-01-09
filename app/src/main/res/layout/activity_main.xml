@@ -75,4 +75,9 @@ android:textSize="20dp"
         android:layout_gravity="center"
         android:text="Pokaż listę dostępnych miejsc"
         android:onClick="b2click"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
 </LinearLayout>
