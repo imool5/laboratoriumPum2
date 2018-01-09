@@ -58,10 +58,7 @@ import butterknife.ButterKnife;
         @BindView(R.id.temp)
         TextView temperature;
 
-        //        @OnClick(R.id.btn)
-//        void selectPlace() {
-//         openAlertDialog();
-//        }
+
         private OnClickPlace listener;
 
         public ViewHolder(View itemView, OnClickPlace listener) {

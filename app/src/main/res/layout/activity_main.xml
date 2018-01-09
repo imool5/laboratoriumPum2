@@ -22,11 +22,11 @@ android:textSize="20dp"
         android:id="@+id/TextView"/>
 
     <ImageView
-       android:layout_marginTop="1dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/Ikona"
         android:layout_gravity="center"
-        android:src="@drawable/ic_ac_unit_black_24dp" />
+        />
 
     <TextView
         android:textColor="@color/colorWhite"
